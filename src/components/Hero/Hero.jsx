@@ -30,9 +30,9 @@ const Hero = () => {
             </HeroBg>
 
             <HeroContent>
-                <HeroH1> Cyber Security Made Easy. </HeroH1>
+                <HeroH1> Cryptoverse and Open-Source Made Easy. </HeroH1>
                 <HeroP>
-                    Cyber Security is a field that is growing at an exponential rate.
+                    Cryptoverse and Web3 is a field that is growing at an exponential rate.
                 </HeroP>
 
                 <HeroBtnWrapper>
