@@ -40,7 +40,7 @@ const Navbar = ({toggle}) => {
                 <Nav scrollNav={scrollNav}>
                     <NavbarContainer>
                         <NavLogo to={"/"} onClick={toggleHome}>
-                            Thecyberworld
+                            Cryptoverse Web3
                         </NavLogo>
                         <MobileIcon onClick={toggle}>
                             <FaBars/>
