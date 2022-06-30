@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import {
-    Navbar, Hero, Info, Footer,
+    Navbar, Sidebar, Hero, Info, Footer,
 } from "../components";
 
 
@@ -11,6 +11,7 @@ const Homepage = () => {
     const toggle = () => setIsOpen(!isOpen);
     return (
         <>
+            <Sidebar isOpen={isOpen} toggle={toggle}/>
             <Navbar toggle={toggle}/>
             <Hero/>
             <Info {...aboutData}/>
