@@ -82,7 +82,7 @@ export const NavLinks = styled(LinkScroll)`
   cursor: pointer;
 
   &.active {
-    border-bottom: 3px solid #01bf71;
+    border-bottom: 3px solid #ff8100;
   }
 `
 
@@ -98,7 +98,7 @@ export const NavBtn = styled.nav`
 export const NavBtnLink = styled.a`
   border-width: 2px;
   border-style: solid;
-  border-color: #ffffff;
+  border-color: #343434;
   background: transparent;
   white-space: nowrap;
   padding: 10px 22px;
@@ -111,9 +111,9 @@ export const NavBtnLink = styled.a`
 
   &:hover {
     transition: all 0.2s ease-in-out;
-    background: #fff;
-    color: #010606;
-
-
+    background: transparent;
+    color: #ff8100;
+    border-color: #343434;
+    font-size: 18px;
   }
 `

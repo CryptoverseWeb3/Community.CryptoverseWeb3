@@ -4,6 +4,7 @@ import img from "../../assets/banner-bg.png";
 
 export const BackgroundImage = styled.div`
   background-image: url(${img});
+  background-color: #000;
   margin-top: 0;
   background-position: top center;
   background-size: cover;
@@ -101,10 +102,12 @@ export const HeroBtnWrapper = styled.div`
 
 export const ArrowForward = styled(MdArrowForward)`
   margin-left: 8px;
+  margin-top: 3px;
   font-size: 20px;
 `
 
 export const ArrowRight = styled(MdKeyboardArrowRight)`
   margin-left: 8px;
+  margin-top: 3px;
   font-size: 20px;
 `

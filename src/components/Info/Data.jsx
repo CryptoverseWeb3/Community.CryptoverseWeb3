@@ -75,7 +75,7 @@ export const communityData = {
     idTo: 'courses',
     buttonType: 'scroll',
     link: "joinUs",
-    link2: "https://www.linktree.com/thecyberworld",
+    link2: "https://www.linktree.com/cryptoverseWeb3",
     lightBg: false,
     lightText: true,
     lightTextDesc: true,
