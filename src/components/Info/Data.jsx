@@ -95,7 +95,8 @@ export const communityData = {
 export const contributeData = {
     id: 'contribute',
     idTo: 'contribute',
-    buttonType: 'scroll',
+    buttonType: 'link',
+    link: 'https://github.com/cryptoverseWeb3',
     lightBg: false,
     lightText: true,
     lightTextDesc: true,

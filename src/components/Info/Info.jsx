@@ -20,6 +20,7 @@ const InfoSection = ({
                          id,
                          idTo,
                          buttonType,
+                         button,
                          link,
                          link2,
                          lightBg,
@@ -66,6 +67,7 @@ const InfoSection = ({
                                         (
                                             <ButtonLink
                                                 href={link}
+                                                target="_blank"
                                                 primary={primary ? 'true' : ''}
                                                 dark={dark ? 1 : 0}
                                                 dark2={dark2 ? 1 : 0}
