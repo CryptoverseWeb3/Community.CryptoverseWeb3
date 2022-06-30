@@ -1,7 +1,8 @@
 import React, {useState} from 'react';
-import {Navbar} from "../components";
-import {Hero} from "../components";
-import {Info} from "../components";
+import {
+    Navbar, Hero, Info, Footer,
+} from "../components";
+
 
 import {aboutData, communityData, contributeData} from "../components/Info/Data";
 
@@ -11,10 +12,11 @@ const Homepage = () => {
     return (
         <>
             <Navbar toggle={toggle}/>
-            <Hero />
+            <Hero/>
             <Info {...aboutData}/>
             <Info {...communityData}/>
             <Info {...contributeData}/>
+            <Footer/>
         </>
     );
 };
