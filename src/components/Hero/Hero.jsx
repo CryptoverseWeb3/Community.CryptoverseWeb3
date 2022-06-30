@@ -10,7 +10,9 @@ import {
     HeroP,
     HeroBtnWrapper,
     ArrowForward,
-    ArrowRight
+    ArrowRight,
+    BackgroundImage
+
 } from './HeroElements';
 import {Button} from '../Buttons/ButtonElements';
 
@@ -24,30 +26,29 @@ const Hero = () => {
 
 
     return (
-        <HeroContainer id={"home"}>
-            <HeroBg>
-                <VideoBg autoPlay loop muted src={Video} type={'video/mp4'}/>
-            </HeroBg>
+        <BackgroundImage>
+            <HeroContainer id={"home"}>
+                <HeroContent>
+                    <HeroH1> Cryptoverse and Open-Source Made Easy. </HeroH1>
+                    <HeroP>
+                        Cryptoverse and Web3 is a field that is growing at an exponential rate.
+                    </HeroP>
 
-            <HeroContent>
-                <HeroH1> Cryptoverse and Open-Source Made Easy. </HeroH1>
-                <HeroP>
-                    Cryptoverse and Web3 is a field that is growing at an exponential rate.
-                </HeroP>
-
-                <HeroBtnWrapper>
-                    <Button to={"about"} onMouseEnter={onHover} onMouseLeave={onHover} primary={"true"} dark={"true"}
-                            smooth={true}
-                            duration={500}
-                            spy={true}
-                            exact="true"
-                            offset={-80}
-                    >
-                        Get Started {hover ? <ArrowForward/> : <ArrowRight/>}
-                    </Button>
-                </HeroBtnWrapper>
-            </HeroContent>
-        </HeroContainer>
+                    <HeroBtnWrapper>
+                        <Button to={"about"} onMouseEnter={onHover} onMouseLeave={onHover} primary={"true"}
+                                dark={"true"}
+                                smooth={true}
+                                duration={500}
+                                spy={true}
+                                exact="true"
+                                offset={-80}
+                        >
+                            Get Started {hover ? <ArrowForward/> : <ArrowRight/>}
+                        </Button>
+                    </HeroBtnWrapper>
+                </HeroContent>
+            </HeroContainer>
+        </BackgroundImage>
     );
 };
 

@@ -1,8 +1,17 @@
 import styled from 'styled-components';
 import {MdArrowForward, MdKeyboardArrowRight} from "react-icons/all";
+import img from "../../assets/banner-bg.png";
+
+export const BackgroundImage = styled.div`
+  background-image: url(${img});
+  margin-top: 0;
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+`;
 
 export const HeroContainer = styled.div`
-  background: #0c0c0c;
+  background: transparent;
   display: flex;
   justify-content: center;
   align-items: center;
