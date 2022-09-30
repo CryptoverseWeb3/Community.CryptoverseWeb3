@@ -124,6 +124,6 @@ git push origin YourBranchName
 
 ---
 
-## 💥 Disscussion
+## 💥 Issues
 
-In order to discuss changes, you are welcome to the [disscussions](https://github.com/thecyberworld/thecyberhub.org/issues/new/choose) about what you would like to contribute. Enhancements are always encouraged and appreciated.
+In order to discuss changes, you are welcome to the [Issues](https://github.com/CryptoverseWeb3/Community.CryptoverseWeb3/issues/) about what you would like to contribute. Enhancements are always encouraged and appreciated.
