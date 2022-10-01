@@ -29,6 +29,7 @@ Front-end:
 ## ⭐ HOW TO MAKE A PULL REQUEST:
 
 **1.** Start by making a Fork of the [**community.crptoverseweb3**](https://github.com/CryptoverseWeb3/Community.CryptoverseWeb3) repository. Click on the <a href="https://github.com/CryptoverseWeb3/Community.CryptoverseWeb3/fork"><img src="https://i.imgur.com/G4z1kEe.png" height="21" width="21"></a>Fork symbol at the top right corner.
+
 **2.** Clone your new fork of the repository in the terminal/CLI on your computer with the following command:
 
 ```bash
