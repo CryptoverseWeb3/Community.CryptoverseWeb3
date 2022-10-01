@@ -2,15 +2,6 @@
 
 **✨👍First off, thanks for taking the time to contribute to The Cryptoverse Commnunity!👍✨**
 
-Basics:
-
-  - [Git](https://git-scm.com/)
-  - [Markdown](https://www.markdownguide.org/basic-syntax/)
-
-Front-end:
-  - [React](https://reactjs.org/)
-  - [Ant Design](https://ant.design/)
-
 ---
 
 ## 💥 How to Contribute
