@@ -13,9 +13,18 @@ import {
     NavBtn,
     NavBtnLink
 } from "./NavbarElements";
+import Dropdown from '../Dropdowns/Dropdown';
+import SideDropdown from '../Dropdowns/SideDropdown';
 
 const Navbar = ({toggle}) => {
     const [scrollNav, setScrollNav] = useState(false);
+    const [drop, setDrop] = useState(false);
+
+    const dropHandler = (title) => {
+        if(title == 'resources'){
+            setDrop(true);
+        }else setDrop(false);
+    }
 
     const changeNav = () => {
         if (window.scrollY >= 80) {
@@ -37,8 +46,8 @@ const Navbar = ({toggle}) => {
     return (
         <>
             <IconContext.Provider value={{color: '#fff'}}>
-                <Nav scrollNav={scrollNav}>
-                    <NavbarContainer>
+            <Nav onMouseLeave={() => setDrop(false)} scrollNav={scrollNav}>
+                 <NavbarContainer>
                         <NavLogo to={"/"} onClick={toggleHome}>
                             Cryptoverse Web3
                         </NavLogo>
@@ -48,16 +57,15 @@ const Navbar = ({toggle}) => {
                         <NavMenu>
                             {[
                                 {to: 'about', title: 'About',},
-                                {to: 'courses', title: 'Courses',},
                                 // {to: 'events', title: 'Events',},
-                                {to: 'services', title: 'Services',},
+                                {to: 'resources', title: 'Resources',},
                                 {to: 'community', title: 'Community',},
                                 {to: 'contribute', title: 'Contribute',},
                                 // {to: 'Testimonials', title: 'Testimonials',},
                                 // {to: 'join', title: 'Join',},
                                 // {to: 'Newsletter', title: 'Newsletter',},
                             ].map(({to, title}) => (
-                                <NavItem key={to}>
+                                <NavItem onMouseEnter={()=>dropHandler(to)} onMouseLeave={()=>dropHandler(to)} key={to}>
                                     <NavLinks
                                         to={to}
                                         smooth={true}
@@ -65,9 +73,10 @@ const Navbar = ({toggle}) => {
                                         spy={true}
                                         exact="true"
                                         offset={-80}
-                                    >
+                                    > 
                                         {title}
                                     </NavLinks>
+                                    {to=='resources' && drop && <Dropdown sidebar={false}/>}
                                 </NavItem>
                             ))}
                         </NavMenu>
@@ -84,5 +93,3 @@ const Navbar = ({toggle}) => {
 };
 
 export default Navbar;
-
-
