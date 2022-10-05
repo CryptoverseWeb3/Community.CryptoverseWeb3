@@ -16,7 +16,7 @@ export const Button = styled(ScrollLink)`
   border-radius: 5px;
   border-width: 1px;
   border-style: solid;
-  border-color: #343434;
+  border-color: #FF8100;
   background: transparent;
   margin-right: 20px; //border-radius: 50px;
   white-space: nowrap;
