@@ -72,9 +72,9 @@ export const coursesData = {
 
 export const communityData = {
     id: 'community',
-    idTo: 'courses',
-    buttonType: 'scroll',
-    link: "joinUs",
+    idTo: 'community',
+    buttonType: 'Link',
+    link: "https://discord.com/invite/WhDry9FWE7",
     link2: "https://www.linktree.com/cryptoverseWeb3",
     lightBg: false,
     lightText: true,
