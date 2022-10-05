@@ -17,8 +17,17 @@ export default function SideDropdown(props) {
     }
   `
 
-  const mobStyle = {width: '100%', padding: 6, border:'1px solid green', color:'white' };
-  const dStyle = {width: 200, padding: 6, border:'1px solid orange', color:'white', position: 'absolute', left: 132, top: -6 };
+  const mobStyle = {
+    justifyContent: 'center',
+    margin: '0px auto 10px',
+    textAlign: "center",
+    width: '20em', padding: 6, border: '1px solid grey', borderRadius: '5px',
+    color: 'white'
+  };
+  const dStyle = {
+    width: 200, padding: 6, borderRadius: 8, background: '#101417',
+    border: '1px solid #101417', color: 'white', position: 'absolute', left: 132, top: -6
+  };
 
   return (
     <div style={props.sidebar ? mobStyle : dStyle}>

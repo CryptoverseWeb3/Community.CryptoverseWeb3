@@ -21,9 +21,9 @@ const Navbar = ({toggle}) => {
     const [drop, setDrop] = useState(false);
 
     const dropHandler = (title) => {
-        if(title == 'resources'){
+        if (title == 'resources') {
             setDrop(true);
-        }else setDrop(false);
+        } else setDrop(false);
     }
 
     const changeNav = () => {
@@ -46,46 +46,30 @@ const Navbar = ({toggle}) => {
     return (
         <>
             <IconContext.Provider value={{color: '#fff'}}>
-            <Nav onMouseLeave={() => setDrop(false)} scrollNav={scrollNav}>
-                 <NavbarContainer>
-                        <NavLogo to={"/"} onClick={toggleHome}>
-                            Cryptoverse Web3
-                        </NavLogo>
-                        <MobileIcon onClick={toggle}>
-                            <FaBars/>
-                        </MobileIcon>
+                <Nav onMouseLeave={() => setDrop(false)} scrollNav={scrollNav}>
+                    <NavbarContainer>
+                        <NavLogo to={"/"} onClick={toggleHome}>Cryptoverse Web3</NavLogo>
+                        <MobileIcon onClick={toggle}><FaBars/></MobileIcon>
                         <NavMenu>
                             {[
                                 {to: 'about', title: 'About',},
-                                // {to: 'events', title: 'Events',},
                                 {to: 'resources', title: 'Resources',},
                                 {to: 'community', title: 'Community',},
                                 {to: 'contribute', title: 'Contribute',},
+                                // {to: 'events', title: 'Events',},
                                 // {to: 'Testimonials', title: 'Testimonials',},
                                 // {to: 'join', title: 'Join',},
                                 // {to: 'Newsletter', title: 'Newsletter',},
                             ].map(({to, title}) => (
-                                <NavItem onMouseEnter={()=>dropHandler(to)} onMouseLeave={()=>dropHandler(to)} key={to}>
-                                    <NavLinks
-                                        to={to}
-                                        smooth={true}
-                                        duration={500}
-                                        spy={true}
-                                        exact="true"
-                                        offset={-80}
-                                    > 
-                                        {title}
-                                    </NavLinks>
-                                    {to=='resources' && drop && <Dropdown sidebar={false}/>}
+                                <NavItem onMouseEnter={() => dropHandler(to)} onMouseLeave={() => dropHandler(to)} key={to}>
+                                    <NavLinks to={to} smooth={true} duration={500} spy={true} exact="true" offset={-80}>{title}</NavLinks>{to === 'resources' && drop && <Dropdown sidebar={false}/>}
                                 </NavItem>
                             ))}
                         </NavMenu>
                         <NavBtn>
-                            <NavBtnLink href={"https://www.youtube.com/c/thecyberworld?sub_confirmation=1"}
-                                        target="_blank"> Subscribe </NavBtnLink>
+                            <NavBtnLink href={"https://www.youtube.com/c/thecyberworld?sub_confirmation=1"} target="_blank"> Subscribe </NavBtnLink>
                         </NavBtn>
                     </NavbarContainer>
-
                 </Nav>
             </IconContext.Provider>
         </>
