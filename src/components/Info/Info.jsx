@@ -87,7 +87,7 @@ const InfoSection = ({
                                         {buttonLabel2}
                                     </ScrollText>
                                     <ScrollText
-                                        to={"join"}
+                                        to={"community"}
                                         smooth={true}
                                         duration={500}
                                         spy={true}
