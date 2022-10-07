@@ -325,15 +325,18 @@ Error generating stack: `+i.message+`
     font-size: 18px;
   }
 `,Py=N.div`
+  margin-left: 20px;
   margin-top: 32px;
   display: flex;
   flex-direction: column;
   align-items: center;
-`,Ty=N(wy)`
+`,Ty=N(yy)`
+  color: #ff8100;
   margin-left: 8px;
   margin-top: 3px;
   font-size: 20px;
-`,Oy=N(yy)`
+`,Oy=N(wy)`
+  color: #ff8100;
   margin-left: 8px;
   margin-top: 3px;
   font-size: 20px;
@@ -349,12 +352,12 @@ Error generating stack: `+i.message+`
   border-radius: 5px;
   border-width: 1px;
   border-style: solid;
-  border-color: #343434;
+  border-color: #545454;
   background: transparent;
   margin-right: 20px; //border-radius: 50px;
   white-space: nowrap;
   padding: ${({big:e})=>e?"14px 48px":"12px 30px"};
-  color: ${({dark:e})=>e?"#ffffff":"#0e0e0e"};
+  color: ${({dark:e})=>e?"#ff8100":"#0e0e0e"};
   font-size: ${({fontBig:e})=>e?"20px":"16px"};
   outline: none;
   cursor: pointer;
@@ -417,7 +420,7 @@ Error generating stack: `+i.message+`
     border-color: #343434;
     font-size: 18px;
   }
-`,Ny=()=>{const[e,t]=B.exports.useState(!1),n=()=>{t(!e)};return _(ky,{children:_(xy,{id:"home",children:U(_y,{children:[_(Ey,{children:" Cryptoverse and Open-Source Made Easy. "}),_(Cy,{children:"Cryptoverse and Web3 is a field that is growing at an exponential rate."}),_(Py,{children:U(qp,{to:"about",onMouseEnter:n,onMouseLeave:n,primary:"true",dark:"true",smooth:!0,duration:500,spy:!0,exact:"true",offset:-80,children:["Get Started ",e?_(Ty,{}):_(Oy,{})]})})]})})})},$y=N.a`
+`,Ny=()=>{const[e,t]=B.exports.useState(!1),n=()=>{t(!e)};return _(ky,{children:_(xy,{id:"home",children:U(_y,{children:[_(Ey,{children:" Cryptoverse and Open-Source Made Easy. "}),_(Cy,{children:"Cryptoverse and Web3 is a field that is growing at an exponential rate."}),_(Py,{children:U(qp,{to:"about",onMouseEnter:n,onMouseLeave:n,primary:"true",dark:"true",smooth:!0,duration:500,spy:!0,exact:"true",offset:-80,children:["Get Started ",e?_(Oy,{}):_(Ty,{})]})})]})})})},$y=N.a`
   color: #ff8100;
 `,Iy=N.div`
   color: #fff;
