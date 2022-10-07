@@ -16,12 +16,12 @@ export const Button = styled(ScrollLink)`
   border-radius: 5px;
   border-width: 1px;
   border-style: solid;
-  border-color: #343434;
+  border-color: #545454;
   background: transparent;
   margin-right: 20px; //border-radius: 50px;
   white-space: nowrap;
   padding: ${({big}) => (big ? '14px 48px' : '12px 30px')};
-  color: ${({dark}) => dark ? '#ffffff' : '#0e0e0e'};
+  color: ${({dark}) => dark ? '#ff8100' : '#0e0e0e'};
   font-size: ${({fontBig}) => (fontBig ? '20px' : '16px')};
   outline: none;
   cursor: pointer;

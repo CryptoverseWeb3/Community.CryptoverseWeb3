@@ -94,19 +94,23 @@ export const HeroP = styled.p`
 `
 
 export const HeroBtnWrapper = styled.div`
+  margin-left: 20px;
   margin-top: 32px;
   display: flex;
   flex-direction: column;
   align-items: center;
 `
 
-export const ArrowForward = styled(MdArrowForward)`
+
+export const ArrowRight = styled(MdKeyboardArrowRight)`
+  color: #ff8100;
   margin-left: 8px;
   margin-top: 3px;
   font-size: 20px;
 `
 
-export const ArrowRight = styled(MdKeyboardArrowRight)`
+export const ArrowForward = styled(MdArrowForward)`
+  color: #ff8100;
   margin-left: 8px;
   margin-top: 3px;
   font-size: 20px;
