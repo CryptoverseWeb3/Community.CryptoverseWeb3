@@ -3,15 +3,7 @@ import {IconContext} from 'react-icons/lib';
 import {animateScroll as scroll} from 'react-scroll';
 import {FaBars} from 'react-icons/fa';
 import {
-    Nav,
-    NavbarContainer,
-    NavLogo,
-    MobileIcon,
-    NavMenu,
-    NavItem,
-    NavLinks,
-    NavBtn,
-    NavBtnLink
+    Nav,NavbarContainer,NavLogo,MobileIcon,NavMenu,NavItem,NavLinks,NavBtn,NavBtnLink
 } from "./NavbarElements";
 import Dropdown from '../Dropdowns/Dropdown';
 import SideDropdown from '../Dropdowns/SideDropdown';
@@ -21,7 +13,7 @@ const Navbar = ({toggle}) => {
     const [drop, setDrop] = useState(false);
 
     const dropHandler = (title) => {
-        if (title == 'resources') {
+        if (title === 'resources') {
             setDrop(true);
         } else setDrop(false);
     }
@@ -53,13 +45,9 @@ const Navbar = ({toggle}) => {
                         <NavMenu>
                             {[
                                 {to: 'about', title: 'About',},
-                                {to: 'resources', title: 'Resources',},
+                                {to: 'resources', title: 'Learn',},
                                 {to: 'community', title: 'Community',},
                                 {to: 'contribute', title: 'Contribute',},
-                                // {to: 'events', title: 'Events',},
-                                // {to: 'Testimonials', title: 'Testimonials',},
-                                // {to: 'join', title: 'Join',},
-                                // {to: 'Newsletter', title: 'Newsletter',},
                             ].map(({to, title}) => (
                                 <NavItem onMouseEnter={() => dropHandler(to)} onMouseLeave={() => dropHandler(to)} key={to}>
                                     <NavLinks to={to} smooth={true} duration={500} spy={true} exact="true" offset={-80}>{title}</NavLinks>{to === 'resources' && drop && <Dropdown sidebar={false}/>}
