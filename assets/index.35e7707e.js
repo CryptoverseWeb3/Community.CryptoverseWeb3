@@ -113,16 +113,34 @@ Error generating stack: `+i.message+`
   padding: 0 24px;
   max-width: 1100px;
 `,s2=T(un)`
-  color: #fff;
-  justify-self: flex-start;
-  cursor: pointer;
-  font-size: 1.5rem;
-  display: flex;
-  align-items: center;
-  margin-left: 24px;
-  font-weight: bold;
-  text-decoration: none;
-`,c2=T.div`
+color: #fff;
+justify-self: flex-start;
+cursor: pointer;
+font-size: 1.5rem;
+display: flex;
+align-items: center;
+margin-left: 24px;
+font-weight: bold;
+text-decoration: none;
+`,c2=T.img`
+height: 60px;
+color: #fff;
+justify-self: flex-start;
+cursor: pointer;
+font-size: 1.5rem;
+display: flex;
+align-items: center;
+margin-left: 24px;
+font-weight: bold;
+text-decoration: none;
+@media screen and (max-width: 500px) {
+margin: 0 0 0 0;
+}
+
+@media screen and (max-width: 350px) {
+margin: 0 -20px 0 0;
+}
+`,f2=T.div`
   display: none;
 
   @media screen and (max-width: 760px) {
@@ -135,7 +153,7 @@ Error generating stack: `+i.message+`
     cursor: pointer;
     color: #fff;
   }
-`,f2=T.div`
+`,d2=T.div`
   display: flex;
   align-items: center;
   list-style: none;
@@ -145,9 +163,9 @@ Error generating stack: `+i.message+`
   @media screen and (max-width: 760px) {
     display: none;
   }
-`,d2=T.li`
+`,p2=T.li`
   height: 80px;
-`,p2=T(wo)`
+`,h2=T(wo)`
   color: #fff;
   display: flex;
   align-items: center;
@@ -159,14 +177,14 @@ Error generating stack: `+i.message+`
   &.active {
     border-bottom: 3px solid #ff8100;
   }
-`,h2=T.nav`
+`,m2=T.nav`
   display: flex;
   align-items: center;
 
   @media screen and (max-width: 760px) {
     display: none;
   }
-`,m2=T.a`
+`,v2=T.a`
   border-width: 2px;
   border-style: solid;
   border-color: #343434;
@@ -192,13 +210,13 @@ Error generating stack: `+i.message+`
     &:hover {
       cursor : pointer;
     }
-  `,r={justifyContent:"center",margin:"0px auto 10px",textAlign:"center",width:"20em",padding:6,border:"1px solid grey",borderRadius:"5px",color:"white"},o={width:200,padding:6,borderRadius:8,background:"#101417",border:"1px solid #101417",color:"white",position:"absolute",left:132,top:-6};return k("div",{style:e.sidebar?r:o,children:k("li",{children:t.map(i=>k(n,{children:b(un,{style:{textDecoration:"none",color:"white"},to:i.url,children:[" ",i.title," "]})}))})})}function v2(e){const t=[{title:"Resources",url:"/RoadmapResources"}],[n,r]=A.exports.useState(!1),o=u=>{e.sidebar?u==="Item 2"&&r(!n):r(u==="Item 2")},i=T.ul`
+  `,r={justifyContent:"center",margin:"0px auto 10px",textAlign:"center",width:"20em",padding:6,border:"1px solid grey",borderRadius:"5px",color:"white"},o={width:200,padding:6,borderRadius:8,background:"#101417",border:"1px solid #101417",color:"white",position:"absolute",left:132,top:-6};return k("div",{style:e.sidebar?r:o,children:k("li",{children:t.map(i=>k(n,{children:b(un,{style:{textDecoration:"none",color:"white"},to:i.url,children:[" ",i.title," "]})}))})})}function g2(e){const t=[{title:"Resources",url:"/RoadmapResources"}],[n,r]=A.exports.useState(!1),o=u=>{e.sidebar?u==="Item 2"&&r(!n):r(u==="Item 2")},i=T.ul`
     height: 32px; 
     position: relative;
     &:hover {
       cursor : pointer;
     }
-  `,l={width:"100%",padding:6},a={borderRadius:8,background:"#101417",border:"1px solid #101417",width:130,padding:6,color:"white",position:"absolute",top:80};return k("div",{style:e.sidebar?l:a,children:k("li",{children:t.map(u=>e.sidebar?b(Ln,{children:[k(i,{onClick:()=>o(u.title),children:u.title!=="Item 2"?b(un,{style:{textDecoration:"none",color:"white"},to:u.url,children:[" ",u.title," "]}):b("p",{style:{textDecoration:"none",color:"white"},children:[" ",u.title," "]})}),u.title==="Item 2"&&n&&k(Cf,{sidebar:!0})]}):b(i,{onMouseEnter:()=>o(u.title),children:[b(un,{style:{textDecoration:"none",color:"white"},to:u.url,children:[" ",u.title," "]}),u.title==="Item 2"&&n&&k(Cf,{sidebar:!1})]}))})})}const g2=({toggle:e})=>{const[t,n]=A.exports.useState(!1),[r,o]=A.exports.useState(!1),i=u=>{o(u==="resources")},l=()=>{window.scrollY>=80?n(!0):n(!1)};A.exports.useEffect(()=>{window.addEventListener("scroll",l)},[]);const a=()=>{Cs.scrollToTop()};return k(Ln,{children:k(lu.Provider,{value:{color:"#fff"},children:k(a2,{onMouseLeave:()=>o(!1),scrollNav:t,children:b(u2,{children:[k(s2,{to:"/",onClick:a,children:"Cryptoverse Web3"}),k(c2,{onClick:e,children:k(Sy,{})}),k(f2,{children:[{to:"about",title:"About"},{to:"resources",title:"Learn"},{to:"community",title:"Community"},{to:"contribute",title:"Contribute"}].map(({to:u,title:s})=>b(d2,{onMouseEnter:()=>i(u),onMouseLeave:()=>i(u),children:[k(p2,{to:u,smooth:!0,duration:500,spy:!0,exact:"true",offset:-80,children:s}),u==="resources"&&r&&k(v2,{sidebar:!1})]},u))}),k(h2,{children:k(m2,{href:"https://www.youtube.com/c/thecyberworld?sub_confirmation=1",target:"_blank",children:" Subscribe "})})]})})})})},y2=T.nav`
+  `,l={width:"100%",padding:6},a={borderRadius:8,background:"#101417",border:"1px solid #101417",width:130,padding:6,color:"white",position:"absolute",top:80};return k("div",{style:e.sidebar?l:a,children:k("li",{children:t.map(u=>e.sidebar?b(Ln,{children:[k(i,{onClick:()=>o(u.title),children:u.title!=="Item 2"?b(un,{style:{textDecoration:"none",color:"white"},to:u.url,children:[" ",u.title," "]}):b("p",{style:{textDecoration:"none",color:"white"},children:[" ",u.title," "]})}),u.title==="Item 2"&&n&&k(Cf,{sidebar:!0})]}):b(i,{onMouseEnter:()=>o(u.title),children:[b(un,{style:{textDecoration:"none",color:"white"},to:u.url,children:[" ",u.title," "]}),u.title==="Item 2"&&n&&k(Cf,{sidebar:!1})]}))})})}var y2="/assets/Community Cryptoverseweb3 logo.52d823a0.png";const w2=({toggle:e})=>{const[t,n]=A.exports.useState(!1),[r,o]=A.exports.useState(!1),i=u=>{o(u==="resources")},l=()=>{window.scrollY>=80?n(!0):n(!1)};A.exports.useEffect(()=>{window.addEventListener("scroll",l)},[]);const a=()=>{Cs.scrollToTop()};return k(Ln,{children:k(lu.Provider,{value:{color:"#fff"},children:k(a2,{onMouseLeave:()=>o(!1),scrollNav:t,children:b(u2,{children:[k(s2,{to:"/",onClick:a,children:k(c2,{src:y2})}),k(f2,{onClick:e,children:k(Sy,{})}),k(d2,{children:[{to:"about",title:"About"},{to:"resources",title:"Learn"},{to:"community",title:"Community"},{to:"contribute",title:"Contribute"}].map(({to:u,title:s})=>b(p2,{onMouseEnter:()=>i(u),onMouseLeave:()=>i(u),children:[k(h2,{to:u,smooth:!0,duration:500,spy:!0,exact:"true",offset:-80,children:s}),u==="resources"&&r&&k(g2,{sidebar:!1})]},u))}),k(m2,{children:k(v2,{href:"https://www.youtube.com/c/thecyberworld?sub_confirmation=1",target:"_blank",children:" Subscribe "})})]})})})})},S2=T.nav`
   position: fixed;
   z-index: 999;
   width: 100%;
@@ -210,9 +228,9 @@ Error generating stack: `+i.message+`
   transition: 0.3s ease-in-out;
   opacity: ${({isOpen:e})=>e?"100%":"0"};
   top: ${({isOpen:e})=>e?"0":"-100%"};
-`,w2=T(ky)`
+`,k2=T(ky)`
   color: #fff;
-`,S2=T.div`
+`,x2=T.div`
   position: absolute;
   top: 1.2rem;
   right: 1.5rem;
@@ -220,7 +238,7 @@ Error generating stack: `+i.message+`
   font-size: 2rem;
   cursor: pointer;
   outline: none;
-`,k2=T.div`
+`,_2=T.div`
   color: #fff;
 `,xr=T.div`
   display: flex;
@@ -237,10 +255,10 @@ Error generating stack: `+i.message+`
     color: #ff8100;
     transition: 0.2s ease-in-out;
   }
-`,x2=T.div`
+`,E2=T.div`
   display: flex;
   justify-content: center;
-`,_2=T.div`
+`,C2=T.div`
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows:repeat(6, 80px);
@@ -249,7 +267,7 @@ Error generating stack: `+i.message+`
   @media screen and (min-width: 480px) {
     grid-template-rows: repeat(6, 60px);
   }
-`,E2=T(un)`
+`,P2=T(un)`
   border-width: 2px;
   border-radius: 5px;
   border-style: solid;
@@ -271,14 +289,14 @@ Error generating stack: `+i.message+`
     border-color: #343434;
     font-size: 18px;
   }
-`,C2=({isOpen:e,toggle:t})=>b(y2,{isOpen:e,onClick:t,children:[k(S2,{onClick:t,children:k(w2,{})}),b(k2,{children:[b(_2,{children:[k(xr,{to:"about",children:"About"}),k(xr,{to:"newsletters",children:"Newsletters"}),k(xr,{to:"community",children:"Community"}),k(xr,{to:"join",children:"Join"}),k(xr,{to:"subscribe",children:"Subscribe"})]}),k(x2,{children:k(E2,{to:"/subscribe",children:"Subscribe"})})]})]});function P2(e){return dn({tag:"svg",attr:{viewBox:"0 0 24 24"},child:[{tag:"path",attr:{fill:"none",d:"M0 0h24v24H0V0z"}},{tag:"path",attr:{d:"M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"}}]})(e)}function T2(e){return dn({tag:"svg",attr:{viewBox:"0 0 24 24"},child:[{tag:"path",attr:{fill:"none",d:"M0 0h24v24H0z"}},{tag:"path",attr:{d:"M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"}}]})(e)}var O2="/assets/banner-bg.7d41ca4d.png";const $2=T.div`
-  background-image: url(${O2});
+`,T2=({isOpen:e,toggle:t})=>b(S2,{isOpen:e,onClick:t,children:[k(x2,{onClick:t,children:k(k2,{})}),b(_2,{children:[b(C2,{children:[k(xr,{to:"about",children:"About"}),k(xr,{to:"newsletters",children:"Newsletters"}),k(xr,{to:"community",children:"Community"}),k(xr,{to:"join",children:"Join"}),k(xr,{to:"subscribe",children:"Subscribe"})]}),k(E2,{children:k(P2,{to:"/subscribe",children:"Subscribe"})})]})]});function O2(e){return dn({tag:"svg",attr:{viewBox:"0 0 24 24"},child:[{tag:"path",attr:{fill:"none",d:"M0 0h24v24H0V0z"}},{tag:"path",attr:{d:"M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"}}]})(e)}function $2(e){return dn({tag:"svg",attr:{viewBox:"0 0 24 24"},child:[{tag:"path",attr:{fill:"none",d:"M0 0h24v24H0z"}},{tag:"path",attr:{d:"M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"}}]})(e)}var z2="/assets/banner-bg.7d41ca4d.png";const L2=T.div`
+  background-image: url(${z2});
   background-color: #000;
   margin-top: 0;
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
-`,z2=T.div`
+`,N2=T.div`
   background: transparent;
   display: flex;
   justify-content: center;
@@ -314,7 +332,7 @@ Error generating stack: `+i.message+`
   -o-object-fit: cover;
   object-fit: cover;
   background: #232a34;
-`;const L2=T.div`
+`;const R2=T.div`
   z-index: 3;
   max-width: 1200px;
   position: absolute;
@@ -322,7 +340,7 @@ Error generating stack: `+i.message+`
   display: flex;
   flex-direction: column;;
   align-items: center;
-`,N2=T.h1`
+`,I2=T.h1`
   color: #fff;
   font-size: 48px;
   text-align: center;
@@ -334,7 +352,7 @@ Error generating stack: `+i.message+`
   @media screen and (max-width: 480px) {
     font-size: 32px;
   }
-`,R2=T.p`
+`,M2=T.p`
   margin-top: 24px;
   color: #fff;
   font-size: 24px;
@@ -348,23 +366,23 @@ Error generating stack: `+i.message+`
   @media screen and (max-width: 480px) {
     font-size: 18px;
   }
-`,I2=T.div`
+`,j2=T.div`
   margin-left: 20px;
   margin-top: 32px;
   display: flex;
   flex-direction: column;
   align-items: center;
-`,M2=T(P2)`
+`,A2=T(O2)`
   color: #ff8100;
   margin-left: 8px;
   margin-top: 3px;
   font-size: 20px;
-`,j2=T(T2)`
+`,D2=T($2)`
   color: #ff8100;
   margin-left: 8px;
   margin-top: 3px;
   font-size: 20px;
-`,A2=T.span`
+`,F2=T.span`
   margin: 5px 5px 0 0;
   display: inline;
   flex-direction: row;
@@ -418,7 +436,7 @@ Error generating stack: `+i.message+`
     transition: all 0.2s ease-in-out;
     background: ${({primary:e})=>e?"#fff":"#01BF71"};
   }
-`;const D2=T.a`
+`;const H2=T.a`
   border-width: 1px;
   border-style: solid;
   border-color: #343434;
@@ -444,16 +462,16 @@ Error generating stack: `+i.message+`
     border-color: #343434;
     font-size: 18px;
   }
-`,F2=()=>{const[e,t]=A.exports.useState(!1),n=()=>{t(!e)};return k($2,{children:k(z2,{id:"home",children:b(L2,{children:[k(N2,{children:" Cryptoverse and Open-Source Made Easy. "}),k(R2,{children:"Cryptoverse and Web3 is a field that is growing at an exponential rate."}),k(I2,{children:b(Th,{to:"about",onMouseEnter:n,onMouseLeave:n,primary:"true",dark:"true",smooth:!0,duration:500,spy:!0,exact:"true",offset:-80,children:["Get Started ",e?k(j2,{}):k(M2,{})]})})]})})})},H2=T.a`
+`,B2=()=>{const[e,t]=A.exports.useState(!1),n=()=>{t(!e)};return k(L2,{children:k(N2,{id:"home",children:b(R2,{children:[k(I2,{children:" Cryptoverse and Open-Source Made Easy. "}),k(M2,{children:"Cryptoverse and Web3 is a field that is growing at an exponential rate."}),k(j2,{children:b(Th,{to:"about",onMouseEnter:n,onMouseLeave:n,primary:"true",dark:"true",smooth:!0,duration:500,spy:!0,exact:"true",offset:-80,children:["Get Started ",e?k(D2,{}):k(A2,{})]})})]})})})},W2=T.a`
   color: #ff8100;
-`,B2=T.div`
+`,b2=T.div`
   color: #fff;
   background: ${({lightBg:e})=>e?"#f9f9f9":"#010606"};
 
   @media screen and (max-width: 768px) {
     padding: 100px 0;
   }
-`,W2=T.div`
+`,U2=T.div`
   display: grid;
   z-index: 1;
   height: 860px;
@@ -466,7 +484,7 @@ Error generating stack: `+i.message+`
 `,Pf=T(wo)`
   margin: 10px 10px 10px 20px;
   cursor: pointer;
-`,b2=T.div`
+`,V2=T.div`
   display: grid;
   grid-auto-columns: minmax(auto, 1 lf);
   align-items: center;
@@ -475,19 +493,19 @@ Error generating stack: `+i.message+`
   @media screen and (max-width: 768px) {
     grid-template-areas: ${({imgStart:e})=>e?"'col1' 'col2'":"'col1 col1' 'col2 col2'"};
   }
-`,U2=T.div`
+`,Q2=T.div`
   margin-bottom: 15px;
   padding: 0 15px;
   grid-area: col1;
-`,V2=T.div`
+`,Y2=T.div`
   margin-bottom: 15px;
   padding: 0 15px;
   grid-area: col2;
-`,Q2=T.div`
+`,G2=T.div`
   max-width: 540px;
   padding-top: 0;
   padding-bottom: 60px;
-`,Y2=T.p`
+`,K2=T.p`
   color: #ff8100;
   font-size: 16px;
   line-height: 16px;
@@ -495,7 +513,7 @@ Error generating stack: `+i.message+`
   letter-spacing: 1.4px;
   text-transform: uppercase;
   margin-bottom: 16px;
-`,G2=T.h1`
+`,X2=T.h1`
   margin-bottom: 24px;
   font-size: 48px;
   line-height: 1.1;
@@ -505,33 +523,33 @@ Error generating stack: `+i.message+`
   @media screen and (max-width: 480px) {
     font-size: 32px;
   }
-`,K2=T.p`
+`,Z2=T.p`
   max-width: 440px;
   margin-bottom: 35px;
   font-size: 18px;
   line-height: 24px;
   color: ${({darkText:e})=>e?"#010606":"#fff"};
-`,X2=T.div`
+`,J2=T.div`
   display: flex;
   justify-content: flex-start;
-`,Z2=T.div`
+`,q2=T.div`
   max-width: 555px;
   height: 100%;
-`,J2=T.img`
+`,ew=T.img`
   width: 100%;
   margin: 0 0 10px 0;
   padding-right: 0;
-`,aa=({id:e,idTo:t,buttonType:n,button:r,link:o,link2:i,lightBg:l,lightText:a,topLine:u,headline:s,description:p,buttonLabel:h,buttonLabel2:m,buttonLabel3:y,imgStart:w,img:S,alt:O,dark:f,dark2:c,primary:d,darkText:g})=>k(Ln,{children:k(B2,{id:e,lightBg:l,children:k(W2,{children:b(b2,{imgStart:w,children:[k(U2,{children:b(Q2,{children:[b(Y2,{children:[" ",u," "]}),b(G2,{lightText:a,children:[" ",s," "]}),b(K2,{darkText:g,children:[" ",p," "]}),b(X2,{children:[n==="scroll"?k(Th,{to:"home",smooth:!0,duration:500,spy:!0,exact:"true",offset:-80,primary:d?"true":"",dark:f?1:0,dark2:c?1:0,children:h}):k(D2,{href:o,target:"_blank",primary:d?"true":"",dark:f?1:0,dark2:c?1:0,children:h}),k(Pf,{to:"contribute",smooth:!0,duration:500,spy:!0,exact:"true",offset:-80,children:m}),k(Pf,{to:"community",smooth:!0,duration:500,spy:!0,exact:"true",offset:-80,children:y})]})]})}),k(V2,{children:k(Z2,{children:k(J2,{src:S,alt:O})})})]})})})});var q2="/assets/footer-bg2.f4a9d4ad.png";const ew=T.div`
-  background-image: url(${q2});
+`,aa=({id:e,idTo:t,buttonType:n,button:r,link:o,link2:i,lightBg:l,lightText:a,topLine:u,headline:s,description:p,buttonLabel:h,buttonLabel2:m,buttonLabel3:y,imgStart:w,img:S,alt:O,dark:f,dark2:c,primary:d,darkText:g})=>k(Ln,{children:k(b2,{id:e,lightBg:l,children:k(U2,{children:b(V2,{imgStart:w,children:[k(Q2,{children:b(G2,{children:[b(K2,{children:[" ",u," "]}),b(X2,{lightText:a,children:[" ",s," "]}),b(Z2,{darkText:g,children:[" ",p," "]}),b(J2,{children:[n==="scroll"?k(Th,{to:"home",smooth:!0,duration:500,spy:!0,exact:"true",offset:-80,primary:d?"true":"",dark:f?1:0,dark2:c?1:0,children:h}):k(H2,{href:o,target:"_blank",primary:d?"true":"",dark:f?1:0,dark2:c?1:0,children:h}),k(Pf,{to:"contribute",smooth:!0,duration:500,spy:!0,exact:"true",offset:-80,children:m}),k(Pf,{to:"community",smooth:!0,duration:500,spy:!0,exact:"true",offset:-80,children:y})]})]})}),k(Y2,{children:k(q2,{children:k(ew,{src:S,alt:O})})})]})})})});var tw="/assets/footer-bg2.f4a9d4ad.png";const nw=T.div`
+  background-image: url(${tw});
   background-color: #010606FF;
   margin-top: 0;
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
 
-`,tw=T.footer`
+`,rw=T.footer`
   background: #080a10;
-`,nw=T.div`
+`,ow=T.div`
   padding: 48px 24px;
   display: flex;
   flex-direction: column;
@@ -539,7 +557,7 @@ Error generating stack: `+i.message+`
   align-items: center;
   max-width: 1100px;
   margin: 0 auto;
-`,rw=T.div`
+`,iw=T.div`
   display: flex;
   justify-content: center;
 
@@ -583,7 +601,7 @@ Error generating stack: `+i.message+`
     transition: .3s ease-out;
     font-size: 15px;
   }
-`,ow=T(wo)`
+`,lw=T(wo)`
   color: #fff;
   text-decoration: none;
   margin-bottom: .5rem;
@@ -618,7 +636,7 @@ Error generating stack: `+i.message+`
     transition: .3s ease-out;
 
   }
-`;const iw=T.a`
+`;const aw=T.a`
   color: #fff;
   text-decoration: none;
   margin-bottom: .5rem;
@@ -630,7 +648,7 @@ Error generating stack: `+i.message+`
     transition: .3s ease-out;
 
   }
-`,lw=T.a`
+`,uw=T.a`
   color: #fff;
   text-decoration: none;
   margin-bottom: .5rem;
@@ -642,7 +660,7 @@ Error generating stack: `+i.message+`
     transition: .3s ease-out;
 
   }
-`,aw=T.a`
+`,sw=T.a`
   color: #fff;
   text-decoration: none;
   margin-bottom: .5rem;
@@ -654,7 +672,7 @@ Error generating stack: `+i.message+`
     transition: .3s ease-out;
 
   }s
-`,uw=T.a`
+`,cw=T.a`
   color: #fff;
   text-decoration: none;
   margin-bottom: .5rem;
@@ -666,11 +684,11 @@ Error generating stack: `+i.message+`
     transition: .3s ease-out;
 
   }
-`,sw=T.div`
+`,fw=T.div`
   max-width: 1000px;
   width: 100%;
   color: #fff;
-`,cw=T.div`
+`,dw=T.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -680,7 +698,7 @@ Error generating stack: `+i.message+`
   @media screen and (max-width: 820px) {
     flex-direction: column;
   }
-`,fw=T(un)`
+`,pw=T(un)`
   color: #fff;
   justify-self: start;
   cursor: pointer;
@@ -697,10 +715,10 @@ Error generating stack: `+i.message+`
     transition: .3s ease-out;
 
   }
-`,dw=T.small`
+`,hw=T.small`
   color: #fff;
   margin-bottom: 16px;
-`,pw=T.div`
+`,mw=T.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -714,7 +732,7 @@ Error generating stack: `+i.message+`
     transition: .3s ease-out;
     font-size: 30px;
   }
-`;const hw=T.a`
+`;const vw=T.a`
   color: #fff;
   font-size: 24px;
 
@@ -723,7 +741,7 @@ Error generating stack: `+i.message+`
     transition: .3s ease-out;
     font-size: 30px;
   }
-`,mw=T.a`
+`,gw=T.a`
   color: #fff;
   font-size: 24px;
 
@@ -732,7 +750,7 @@ Error generating stack: `+i.message+`
     transition: .3s ease-out;
     font-size: 30px;
   }
-`,vw=T.a`
+`,yw=T.a`
   color: #fff;
   font-size: 24px;
 
@@ -741,7 +759,7 @@ Error generating stack: `+i.message+`
     transition: .3s ease-out;
     font-size: 30px;
   }
-`,gw=T.a`
+`,ww=T.a`
   color: #fff;
   font-size: 24px;
 
@@ -750,7 +768,7 @@ Error generating stack: `+i.message+`
     transition: .3s ease-out;
     font-size: 30px;
   }
-`,yw=()=>{Cs.scrollToTop()},ww=()=>k(tw,{children:k(ew,{children:b(nw,{children:[b(rw,{children:[b(Tf,{children:[b(_r,{children:[k(Er,{children:"About Us"}),[{to:"about",title:"About"},{to:"services",title:"Services"},{to:"community",title:"Community"},{to:"contribute",title:"Contribute"}].map(({to:e,title:t})=>k(ow,{to:e,smooth:!0,duration:500,spy:!0,exact:"true",offset:-80,children:t}))]}),b(_r,{children:[k(Er,{children:"Contact Us"}),k(hn,{to:"https://linktr.ee/cryptoverseweb3",children:"Contact"}),k(hn,{to:"https://linktr.ee/cryptoverseweb3",children:"Feedback"}),k(hn,{to:"https://discord.gg/WhDry9FWE7",children:"Support (Discord)"}),k(hn,{to:"https://linktr.ee/cryptoverseweb3",children:"Sponsorships"})]}),b(_r,{children:[k(Er,{children:" Social Media "}),k(iw,{href:"https://www.twitter.com/cryptoverseweb3",target:"_blank",children:" Twitter "}),k(lw,{href:"https://www.github.com/cryptoverseweb3",target:"_blank",children:" GitHub "}),k(aw,{href:"https://discord.gg/WhDry9FWE7",target:"_blank",children:" Discord "}),k(uw,{href:"https://www.linktree.com/cryptoverseweb3",target:"_blank",children:" All Community Links "})]})]}),b(Tf,{children:[b(_r,{children:[k(Er,{children:" Free Courses "}),k(Vo,{href:"https://www.youtube.com/channel/UCu7EGHHiNgEN2228BKD1pqg",target:"_blank",children:" Intro to Cryptoverse "}),k(Vo,{href:"https://www.youtube.com/channel/UCu7EGHHiNgEN2228BKD1pqg",target:"_blank",children:" What is Web3 "}),k(Vo,{href:"https://www.youtube.com/channel/UCu7EGHHiNgEN2228BKD1pqg",target:"_blank",children:" Future of Web3 "}),k(Vo,{href:"https://www.youtube.com/channel/UCu7EGHHiNgEN2228BKD1pqg",target:"_blank",children:" Cryptoverse Web3 "})]}),b(_r,{children:[k(Er,{children:" Videos "}),k(hn,{to:"https://www.youtube.com/channel/UCu7EGHHiNgEN2228BKD1pqg",children:" About Community "}),k(hn,{to:"https://www.youtube.com/channel/UCu7EGHHiNgEN2228BKD1pqg",children:" How to Join Community "}),k(hn,{to:"https://www.youtube.com/channel/UCu7EGHHiNgEN2228BKD1pqg",children:" How to Contribute to the Community "})]})]})]}),k(sw,{children:b(cw,{children:[k(fw,{to:"/",onClick:yw,children:"Cryptoverse Web3"}),b(dw,{children:[" \xA9 ",new Date().getFullYear()," All rights reserved."]}),b(pw,{children:[k(hw,{href:"https://www.twitter.com/cryptoverseWeb3",target:"_blank","aria-label":"Twitter",children:k(wy,{})}),k(mw,{href:"https://www.github.com/cryptoverseWeb3",target:"_blank","aria-label":"Github",children:k(yh,{})}),k(vw,{href:"https://discord.gg/WhDry9FWE7",target:"_blank","aria-label":"Discord",children:k(gy,{})}),k(gw,{href:"https://www.instagram.com/cryptoverseWeb3",target:"_blank","aria-label":"Instagram",children:k(yy,{})})]})]})})]})})}),Sw=T.div`
+`,Sw=()=>{Cs.scrollToTop()},kw=()=>k(rw,{children:k(nw,{children:b(ow,{children:[b(iw,{children:[b(Tf,{children:[b(_r,{children:[k(Er,{children:"About Us"}),[{to:"about",title:"About"},{to:"services",title:"Services"},{to:"community",title:"Community"},{to:"contribute",title:"Contribute"}].map(({to:e,title:t})=>k(lw,{to:e,smooth:!0,duration:500,spy:!0,exact:"true",offset:-80,children:t}))]}),b(_r,{children:[k(Er,{children:"Contact Us"}),k(hn,{to:"https://linktr.ee/cryptoverseweb3",children:"Contact"}),k(hn,{to:"https://linktr.ee/cryptoverseweb3",children:"Feedback"}),k(hn,{to:"https://discord.gg/WhDry9FWE7",children:"Support (Discord)"}),k(hn,{to:"https://linktr.ee/cryptoverseweb3",children:"Sponsorships"})]}),b(_r,{children:[k(Er,{children:" Social Media "}),k(aw,{href:"https://www.twitter.com/cryptoverseweb3",target:"_blank",children:" Twitter "}),k(uw,{href:"https://www.github.com/cryptoverseweb3",target:"_blank",children:" GitHub "}),k(sw,{href:"https://discord.gg/WhDry9FWE7",target:"_blank",children:" Discord "}),k(cw,{href:"https://www.linktree.com/cryptoverseweb3",target:"_blank",children:" All Community Links "})]})]}),b(Tf,{children:[b(_r,{children:[k(Er,{children:" Free Courses "}),k(Vo,{href:"https://www.youtube.com/channel/UCu7EGHHiNgEN2228BKD1pqg",target:"_blank",children:" Intro to Cryptoverse "}),k(Vo,{href:"https://www.youtube.com/channel/UCu7EGHHiNgEN2228BKD1pqg",target:"_blank",children:" What is Web3 "}),k(Vo,{href:"https://www.youtube.com/channel/UCu7EGHHiNgEN2228BKD1pqg",target:"_blank",children:" Future of Web3 "}),k(Vo,{href:"https://www.youtube.com/channel/UCu7EGHHiNgEN2228BKD1pqg",target:"_blank",children:" Cryptoverse Web3 "})]}),b(_r,{children:[k(Er,{children:" Videos "}),k(hn,{to:"https://www.youtube.com/channel/UCu7EGHHiNgEN2228BKD1pqg",children:" About Community "}),k(hn,{to:"https://www.youtube.com/channel/UCu7EGHHiNgEN2228BKD1pqg",children:" How to Join Community "}),k(hn,{to:"https://www.youtube.com/channel/UCu7EGHHiNgEN2228BKD1pqg",children:" How to Contribute to the Community "})]})]})]}),k(fw,{children:b(dw,{children:[k(pw,{to:"/",onClick:Sw,children:"Cryptoverse Web3"}),b(hw,{children:[" \xA9 ",new Date().getFullYear()," All rights reserved."]}),b(mw,{children:[k(vw,{href:"https://www.twitter.com/cryptoverseWeb3",target:"_blank","aria-label":"Twitter",children:k(wy,{})}),k(gw,{href:"https://www.github.com/cryptoverseWeb3",target:"_blank","aria-label":"Github",children:k(yh,{})}),k(yw,{href:"https://discord.gg/WhDry9FWE7",target:"_blank","aria-label":"Discord",children:k(gy,{})}),k(ww,{href:"https://www.instagram.com/cryptoverseWeb3",target:"_blank","aria-label":"Instagram",children:k(yy,{})})]})]})})]})})}),xw=T.div`
   text-align: center;
   color: #cecac3;
   width: 27rem;
@@ -759,11 +777,11 @@ Error generating stack: `+i.message+`
   @media screen and (max-width: 600px) {
     width: 20rem;
   }
-`,kw=T.h1`
+`,_w=T.h1`
   margin: -50px auto 60px auto;
-`,xw=T.h3`
+`,Ew=T.h3`
   margin: -50px auto 70px auto;
-`,_w=T.h2`
+`,Cw=T.h2`
   margin-top: 35px;
   text-align: center;
   color: #cecac3;
@@ -771,16 +789,16 @@ Error generating stack: `+i.message+`
   @media screen and (max-width: 760px) {
     text-align: center;
   }
-`,Ew=T.li`
+`,Pw=T.li`
   color: #cecac3;
 
-`,Cw=T.a`
+`,Tw=T.a`
   color: #cecac3;
   text-decoration-color: #D1913C;
   text-decoration-style: dashed;
 
-`,Pw=T.div`
+`,Ow=T.div`
   margin-top: 15px;
   text-align: start;
   color: #cecac3;
-`,Tw=()=>b(Sw,{children:[k(kw,{children:"Web3 Resources"}),k(xw,{children:"Resources are in order"}),k(_w,{children:" Web 3 "}),k(Pw,{children:k(Ew,{children:k(Cw,{href:"https://www.youtube.com/watch?v=gyMwXuJrbJQ&t=101083s&ab_channel=freeCodeCamp.org",target:"_blank",children:"Blockchain tutorials"})})})]});var Ow="/assets/undraw_developer_activity_re_39tg.963c2fb5.svg",$w="/assets/undraw_work_chat_re_qes4.e7504392.svg",zw="/assets/1.4fcdf216.png";const ua=()=>k(H2,{children:">"}),Lw={id:"about",idTo:"community",buttonType:"scroll",lightBg:!1,lightText:!0,lightTextDesc:!0,topLine:"Cryptoverse Web3 Community",headline:"About CryptoverseWeb3",description:b("p",{children:[k(ua,{})," We help new folks to get into Web3 field.",k("br",{}),k("br",{}),k(ua,{})," We resolve folk's issues, doubts relates to Web3 .",k("br",{}),k("br",{}),k(ua,{})," Open-source projects."]}),buttonLabel:"Get started",buttonLabel2:"Contribute",buttonLabel3:"Join",imgStart:!1,img:zw,alt:"Car",dark:!0,primary:!0,darkText:!1},Nw={id:"community",idTo:"community",buttonType:"Link",link:"https://discord.com/invite/WhDry9FWE7",link2:"https://www.linktree.com/cryptoverseWeb3",lightBg:!1,lightText:!0,lightTextDesc:!0,topLine:"Join our Community",headline:"Over 100,000 members",description:"We help new folks get started into Web development and Web3 field and guided them properly. We also resolve folk's doubts relates to Web Development.",buttonLabel:"Join now",imgStart:!1,img:$w,alt:"Secure data",dark:!0,primary:!0,darkText:!1},Rw={id:"contribute",idTo:"contribute",buttonType:"link",link:"https://github.com/cryptoverseWeb3",lightBg:!1,lightText:!0,lightTextDesc:!0,topLine:"Contribute to CryptoverseWeb3",headline:"Open Source Projects",description:"We also help new folks get started into open-source world and guided them about open-source. We have open-source projects, where you can contribute to it.",buttonLabel:b(Ln,{children:[" ",b(A2,{children:[" ",k(yh,{})," "]})," Contribute now "]}),imgStart:!1,img:Ow,alt:"Secure data",dark:!0,primary:!0,darkText:!1},Iw=()=>b(Ln,{children:[k(F2,{}),k(aa,{...Lw}),k(aa,{...Nw}),k(aa,{...Rw}),k(ww,{})]}),Of=()=>{const[e,t]=A.exports.useState(!1),n=()=>t(!e);return b(Ln,{children:[k(C2,{isOpen:e,toggle:n}),k(g2,{toggle:n}),b(S0,{children:[k(ru,{index:!0,exact:!0,path:"/",element:k(Iw,{})}),k(ru,{path:"roadmapResources",element:k(Tw,{})})]})]})};const sa=document.getElementById("root");sa.hasChildNodes()?Fr.exports.hydrate(k(Ze.StrictMode,{children:k(Wc,{children:k(Of,{})})}),sa):Fr.exports.render(k(Ze.StrictMode,{children:k(Wc,{children:k(Of,{})})}),sa);
+`,$w=()=>b(xw,{children:[k(_w,{children:"Web3 Resources"}),k(Ew,{children:"Resources are in order"}),k(Cw,{children:" Web 3 "}),k(Ow,{children:k(Pw,{children:k(Tw,{href:"https://www.youtube.com/watch?v=gyMwXuJrbJQ&t=101083s&ab_channel=freeCodeCamp.org",target:"_blank",children:"Blockchain tutorials"})})})]});var zw="/assets/undraw_developer_activity_re_39tg.963c2fb5.svg",Lw="/assets/undraw_work_chat_re_qes4.e7504392.svg",Nw="/assets/1.4fcdf216.png";const ua=()=>k(W2,{children:">"}),Rw={id:"about",idTo:"community",buttonType:"scroll",lightBg:!1,lightText:!0,lightTextDesc:!0,topLine:"Cryptoverse Web3 Community",headline:"About CryptoverseWeb3",description:b("p",{children:[k(ua,{})," We help new folks to get into Web3 field.",k("br",{}),k("br",{}),k(ua,{})," We resolve folk's issues, doubts relates to Web3 .",k("br",{}),k("br",{}),k(ua,{})," Open-source projects."]}),buttonLabel:"Get started",buttonLabel2:"Contribute",buttonLabel3:"Join",imgStart:!1,img:Nw,alt:"Car",dark:!0,primary:!0,darkText:!1},Iw={id:"community",idTo:"community",buttonType:"Link",link:"https://discord.com/invite/WhDry9FWE7",link2:"https://www.linktree.com/cryptoverseWeb3",lightBg:!1,lightText:!0,lightTextDesc:!0,topLine:"Join our Community",headline:"Over 100,000 members",description:"We help new folks get started into Web development and Web3 field and guided them properly. We also resolve folk's doubts relates to Web Development.",buttonLabel:"Join now",imgStart:!1,img:Lw,alt:"Secure data",dark:!0,primary:!0,darkText:!1},Mw={id:"contribute",idTo:"contribute",buttonType:"link",link:"https://github.com/cryptoverseWeb3",lightBg:!1,lightText:!0,lightTextDesc:!0,topLine:"Contribute to CryptoverseWeb3",headline:"Open Source Projects",description:"We also help new folks get started into open-source world and guided them about open-source. We have open-source projects, where you can contribute to it.",buttonLabel:b(Ln,{children:[" ",b(F2,{children:[" ",k(yh,{})," "]})," Contribute now "]}),imgStart:!1,img:zw,alt:"Secure data",dark:!0,primary:!0,darkText:!1},jw=()=>b(Ln,{children:[k(B2,{}),k(aa,{...Rw}),k(aa,{...Iw}),k(aa,{...Mw}),k(kw,{})]}),Of=()=>{const[e,t]=A.exports.useState(!1),n=()=>t(!e);return b(Ln,{children:[k(T2,{isOpen:e,toggle:n}),k(w2,{toggle:n}),b(S0,{children:[k(ru,{index:!0,exact:!0,path:"/",element:k(jw,{})}),k(ru,{path:"roadmapResources",element:k($w,{})})]})]})};const sa=document.getElementById("root");sa.hasChildNodes()?Fr.exports.hydrate(k(Ze.StrictMode,{children:k(Wc,{children:k(Of,{})})}),sa):Fr.exports.render(k(Ze.StrictMode,{children:k(Wc,{children:k(Of,{})})}),sa);
