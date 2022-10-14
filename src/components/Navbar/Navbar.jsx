@@ -3,10 +3,11 @@ import {IconContext} from 'react-icons/lib';
 import {animateScroll as scroll} from 'react-scroll';
 import {FaBars} from 'react-icons/fa';
 import {
-    Nav,NavbarContainer,NavLogo,MobileIcon,NavMenu,NavItem,NavLinks,NavBtn,NavBtnLink
+    Nav,NavbarContainer,NavLogo,MobileIcon,NavMenu,NavItem,NavLinks,NavBtn,NavBtnLink,NavLogoRouter
 } from "./NavbarElements";
 import Dropdown from '../Dropdowns/Dropdown';
 import SideDropdown from '../Dropdowns/SideDropdown';
+import logo from "../../assets/Community Cryptoverseweb3 logo.png";
 
 const Navbar = ({toggle}) => {
     const [scrollNav, setScrollNav] = useState(false);
@@ -40,7 +41,9 @@ const Navbar = ({toggle}) => {
             <IconContext.Provider value={{color: '#fff'}}>
                 <Nav onMouseLeave={() => setDrop(false)} scrollNav={scrollNav}>
                     <NavbarContainer>
-                        <NavLogo to={"/"} onClick={toggleHome}>Cryptoverse Web3</NavLogo>
+                        <NavLogoRouter to={"/"} onClick={toggleHome}>
+                            <NavLogo src={logo}/>
+                        </NavLogoRouter>
                         <MobileIcon onClick={toggle}><FaBars/></MobileIcon>
                         <NavMenu>
                             {[
