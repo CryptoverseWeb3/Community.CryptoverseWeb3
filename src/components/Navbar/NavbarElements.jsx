@@ -29,16 +29,35 @@ export const NavbarContainer = styled.div`
   max-width: 1100px;
 `
 
-export const NavLogo = styled(LinkRouter)`
-  color: #fff;
-  justify-self: flex-start;
-  cursor: pointer;
-  font-size: 1.5rem;
-  display: flex;
-  align-items: center;
-  margin-left: 24px;
-  font-weight: bold;
-  text-decoration: none;
+export const NavLogoRouter = styled(LinkRouter)`
+color: #fff;
+justify-self: flex-start;
+cursor: pointer;
+font-size: 1.5rem;
+display: flex;
+align-items: center;
+margin-left: 24px;
+font-weight: bold;
+text-decoration: none;
+`
+export const NavLogo = styled.img`
+height: 60px;
+color: #fff;
+justify-self: flex-start;
+cursor: pointer;
+font-size: 1.5rem;
+display: flex;
+align-items: center;
+margin-left: 24px;
+font-weight: bold;
+text-decoration: none;
+@media screen and (max-width: 500px) {
+margin: 0 0 0 0;
+}
+
+@media screen and (max-width: 350px) {
+margin: 0 -20px 0 0;
+}
 `
 
 export const MobileIcon = styled.div`
