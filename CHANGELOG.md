@@ -1,3 +1,12 @@
+## [0.2.1](https://github.com/CryptoverseWeb3/Community.CryptoverseWeb3/compare/v0.2.0...v0.2.1) (2022-10-14)
+
+
+### Bug Fixes
+
+* repo name in labels.yml ([#25](https://github.com/CryptoverseWeb3/Community.CryptoverseWeb3/issues/25)) ([28015c0](https://github.com/CryptoverseWeb3/Community.CryptoverseWeb3/commit/28015c01e62517b4b3d005f427461e6ccab5c772))
+
+
+
 # [0.2.0](https://github.com/CryptoverseWeb3/Community.CryptoverseWeb3/compare/v0.1.0...v0.2.0) (2022-10-07)
 
 
