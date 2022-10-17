@@ -5,7 +5,7 @@ import ViewProject from "./ViewProject";
 import "./Projects.css";
 const Projects = () => {
   return (
-    <div className="projects__wrapper">
+    <div id="projects" className="projects__wrapper">
       <AllProjects />
     </div>
   );
