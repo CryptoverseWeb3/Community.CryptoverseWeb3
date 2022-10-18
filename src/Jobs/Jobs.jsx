@@ -1,5 +1,5 @@
 import React from "react";
-
+import { v4 as uuidv4 } from "uuid";
 import {
   CardWrapper,
   CardContainer,
@@ -25,10 +25,14 @@ function Jobs({
   jobDescription,
   timeSincePosted,
 }) {
-  const jobTagsElements = jobTags.map((tag) => <JobTags>{tag}</JobTags>);
-  const adTagsElements = adTags.map((tag) => <AdTags>{tag}</AdTags>);
+  const jobTagsElements = jobTags.map((tag) => (
+    <JobTags key={uuidv4()}>{tag}</JobTags>
+  ));
+  const adTagsElements = adTags.map((tag) => (
+    <AdTags key={uuidv4()}>{tag}</AdTags>
+  ));
   const jobDescriptionElements = jobDescription.map((description) => (
-    <li>{description}</li>
+    <li key={uuidv4()}>{description}</li>
   ));
 
   return (

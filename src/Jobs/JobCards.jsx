@@ -2,20 +2,20 @@ import styled from "styled-components";
 
 export const CardWrapper = styled.div`
   padding-top: 15px;
-  padding-bottom: 15px;
+  margin-bottom: 40px;
   display: grid;
   justify-content: center;
   grid-template-columns: 700px;
-  grid-template-rows: 500px;
+  grid-template-rows: 650px;
 `;
 
 export const CardContainer = styled.div`
-  margin: 10px 20px;
+  margin: 10px 20px 30px;
 `;
 
 export const JobCard = styled.div`
   font-size: 26px;
-  background: #212121; 
+  background: #212121;
   margin-bottom: 25px;
   border-radius: 5px;
   overflow: hidden;

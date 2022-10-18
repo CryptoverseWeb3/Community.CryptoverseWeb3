@@ -50,6 +50,35 @@ export const aboutData = {
   darkText: false,
 };
 
+export const eventsData = {
+  id: "events",
+  idTo: "events",
+  buttonType: null,
+  img: null,
+  lightBg: false,
+  lightText: true,
+  lightTextDesc: true,
+  topLine: "events",
+  headline: "Upcoming events",
+  description: (
+    <p>
+      <GSymbol />{" "}
+      {"Events play an important role in learning and are also a great opportunity" +
+        " to unity the community."}
+      <br />
+      <br />
+      <GSymbol /> {"Here you can see present and past events."}
+      <br />
+      <br />
+      <br />
+    </p>
+  ),
+  buttonLabel: null,
+  imgStart: false,
+  dark: true,
+  darkText: false,
+};
+
 export const coursesData = {
   id: "courses",
   idTo: "freeCourses",
