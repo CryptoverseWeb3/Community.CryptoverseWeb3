@@ -1,21 +1,30 @@
-import React from 'react';
+import React from "react";
+import { Hero, Info, Footer } from "../components";
+import Jobs from "../Jobs/Jobs";
+
 import {
-   Hero, Info, Footer,
-} from "../components";
+  aboutData,
+  communityData,
+  contributeData,
+  jobsAndInternship,
+} from "../components/Info/Data";
 
-
-import {aboutData, communityData, contributeData} from "../components/Info/Data";
+import { jobExample1, jobExample2 } from "../Jobs/Data";
 
 const Homepage = () => {
-    return (
-        <>
-            <Hero/>
-            <Info {...aboutData}/>
-            <Info {...communityData}/>
-            <Info {...contributeData}/>
-            <Footer/>
-        </>
-    );
+  return (
+    <>
+      <Hero />
+      <Info {...aboutData} />
+      <Info {...communityData} />
+      <Info {...contributeData} />
+      <div style={{ height: "500px" }}>
+        <Info {...jobsAndInternship} />
+      </div>
+      <Jobs {...jobExample1} />
+      <Jobs {...jobExample2} />
+    </>
+  );
 };
 
 export default Homepage;
