@@ -136,3 +136,19 @@ export const contributeData = {
   primary: true,
   darkText: false,
 };
+
+export const jobsAndInternship = {
+  id: "jobs",
+  idTo: "jobs",
+  buttonType: null,
+  lightBg: false,
+  lightText: true,
+  lightTextDesc: true,
+  topLine: "Work with CryptoverseWeb3",
+  headline: "Jobs and Internship offers",
+  img: null,
+  buttonLabel: null,
+  imgStart: false,
+  dark: true,
+  darkText: false,
+};
