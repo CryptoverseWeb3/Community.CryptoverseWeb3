@@ -58,6 +58,7 @@ const Navbar = ({ toggle }) => {
             <NavMenu>
               {[
                 { to: "about", title: "About" },
+                { to: "events", title: "Events" },
                 { to: "resources", title: "Learn" },
                 { to: "community", title: "Community" },
                 { to: "contribute", title: "Contribute" },

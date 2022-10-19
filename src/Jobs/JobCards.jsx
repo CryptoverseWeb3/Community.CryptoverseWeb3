@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const CardWrapper = styled.div`
+  height: 700px;7
   padding-top: 15px;
   padding-bottom: 15px;
   display: grid;
@@ -15,7 +16,7 @@ export const CardContainer = styled.div`
 
 export const JobCard = styled.div`
   font-size: 26px;
-  background: #212121; 
+  background: #212121;
   margin-bottom: 25px;
   border-radius: 5px;
   overflow: hidden;

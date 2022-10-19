@@ -2,6 +2,7 @@ import carSvg from "../../assets/images/svg-1.svg";
 import piggyBankSvg from "../../assets/images/piggyBank.svg";
 // import secureDataSvg from '../../assets/images/secure_data.svg';
 import contributeSvg from "../../assets/images/undraw_developer_activity_re_39tg.svg";
+import blackBoxPng from "../../assets/images/blackbox.png";
 import communitySvg from "../../assets/images/undraw_work_chat_re_qes4.svg";
 import coursesSvg from "../../assets/images/undraw_programming_re_kg9v.svg";
 import logo_thecyberworld from "../../assets/1.png";
@@ -47,6 +48,36 @@ export const aboutData = {
   alt: "Car",
   dark: true,
   primary: true,
+  darkText: false,
+};
+
+export const eventsData = {
+  id: "events",
+  idTo: "events",
+  buttonType: null,
+  imgStart: true,
+  img: blackBoxPng,
+  lightBg: false,
+  lightText: true,
+  lightTextDesc: true,
+  topLine: "events",
+  headline: "Upcoming events",
+  description: (
+    <p>
+      <GSymbol />{" "}
+      {"Events play an important role in learning and are also a great opportunity" +
+        " to unity the community."}
+      <br />
+      <br />
+      <GSymbol /> {"Here you can see present and past events."}
+      <br />
+      <br />
+      <br />
+    </p>
+  ),
+  buttonLabel: null,
+  imgStart: false,
+  dark: true,
   darkText: false,
 };
 
