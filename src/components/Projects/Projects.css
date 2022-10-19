@@ -1,0 +1,198 @@
+.projects__wrapper {
+  position: relative;
+  color: #fff;
+  background-color: #010606;
+}
+@media screen and (max-width: 768px) {
+  .projects__wrapper {
+    margin: 100px 0 300px 0;
+  }
+}
+.projects__section {
+  position: relative;
+  display: grid;
+  z-index: 1;
+  height: 860px;
+  width: 100%;
+  max-width: 1100px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0 24px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  /* justify-content: left; */
+  place-items: center;
+}
+.projects__section h1 {
+  position: relative;
+  color: #ff8100;
+  text-transform: capitalize;
+  font-size: calc(1em + 0.5vw);
+  line-height: 16px;
+  font-weight: 700;
+  -webkit-letter-spacing: 1.4px;
+  -moz-letter-spacing: 1.4px;
+  -ms-letter-spacing: 1.4px;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+  padding-left: 15px;
+}
+.projects__section h1 ::after {
+  content: "";
+  position: absolute;
+  height: 12px;
+  width: 50%;
+  background-color: #fff;
+  bottom: 1em;
+  left: 0px;
+}
+
+.allProjects {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 100%;
+  justify-self: center;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: 1fr;
+}
+@media only screen and (max-width: 930px) {
+  .allProjects {
+    grid-template-columns: 1fr;
+  }
+}
+.project__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  text-align: left;
+  height: 100%;
+  /* width: 30rem;
+    max-width: 400px; */
+  border-radius: 10px;
+  background-color: rgba(32, 194, 14, 0.04);
+  margin: 20px 20px;
+  padding: 15px 20px;
+  border: 1px solid #2a2a2a;
+  transition: 260ms all;
+}
+.project__container:hover {
+  border-color: #545454;
+  background-color: rgba(255, 129, 0, 0.1);
+}
+
+.styles {
+  text-decoration: none;
+}
+
+.project__container__title {
+  margin: 10px 0;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.project__container__title h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+@media only screen and (max-width: 600px) {
+  .project__container__title h2 {
+    font-size: 1.3em;
+  }
+}
+.project__container__title h6 {
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+.project__container__content {
+  padding: 0 2px;
+  font-size: 1rem;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.tags {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 10px 0;
+  padding: 10px 0;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+
+.tag {
+  margin: 0 5px;
+  padding: 8px 10px;
+  border-radius: 5px;
+  background-color: transparent;
+  border: 1px solid #545454;
+  color: white;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: 260ms all;
+}
+
+.tag:hover {
+  background-color: rgba(255, 129, 0, 0.41);
+  color: white;
+}
+
+.Allproject {
+  margin: 30px 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.Allproject a {
+  color: #cecac3;
+}
+
+.viewProject {
+  display: flex;
+  flex-direction: column;
+  padding: 50px 300px;
+  padding-top: 0;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Montserrat", sans-serif;
+}
+
+.viewProject > * {
+  margin: 10px 0;
+}
+.viewProject h1 {
+  color: #ff8100;
+}
+
+.viewProject p {
+  padding: 0 50px;
+  white-space: pre-line;
+  font-size: 20px;
+}
+
+.viewProject img {
+  margin-top: 0;
+}
+.single__project__view {
+  text-align: center;
+  margin: 200px auto;
+  padding: 0 24px;
+  color: #cecac3;
+  max-width: 1100px;
+}
+@media screen and (max-width: 760px) {
+  .single__project__view {
+    text-align: center;
+  }
+}
