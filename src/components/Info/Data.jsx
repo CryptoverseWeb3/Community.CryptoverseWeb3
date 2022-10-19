@@ -137,7 +137,6 @@ export const communityData = {
   primary: true,
   darkText: false,
 };
-
 export const contributeData = {
   id: "contribute",
   idTo: "contribute",

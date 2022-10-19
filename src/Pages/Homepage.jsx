@@ -1,6 +1,5 @@
 import React from "react";
-import { Hero, Info, Footer } from "../components";
-import Jobs from "../Jobs/Jobs";
+import {Hero, Info, Footer} from "../components";
 
 import {
   aboutData,
@@ -8,7 +7,9 @@ import {
   communityData,
   contributeData,
   jobsAndInternship,
+
 } from "../components/Info/Data";
+import {jobExample1, jobExample2} from "../Jobs/Data";
 
 import { jobExample1, jobExample2 } from "../Jobs/Data";
 import Events from "../Events/Events";
@@ -22,7 +23,8 @@ const Homepage = () => {
         <Info {...eventsData} />
       </div>
       <Events />
-      <Info {...communityData} />
+                  <Projects/>
+<Info {...communityData} />
       <Info {...contributeData} />
       <div style={{ height: "500px" }}>
         <Info {...jobsAndInternship} />
@@ -33,6 +35,7 @@ const Homepage = () => {
       <br></br>
     </>
   );
+
 };
 
 export default Homepage;
