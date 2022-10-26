@@ -1,6 +1,3 @@
-import carSvg from "../../assets/images/svg-1.svg";
-import piggyBankSvg from "../../assets/images/piggyBank.svg";
-// import secureDataSvg from '../../assets/images/secure_data.svg';
 import contributeSvg from "../../assets/images/undraw_developer_activity_re_39tg.svg";
 import blackBoxPng from "../../assets/images/blackbox.png";
 import communitySvg from "../../assets/images/undraw_work_chat_re_qes4.svg";
@@ -10,12 +7,7 @@ import { FaGithub } from "react-icons/fa";
 import { IconsSpacing } from "../Buttons/ButtonElements";
 import { IconsSpacing2 } from "../Buttons/ButtonElements";
 import { Symbol } from "./InfoElements";
-// import {CgCommunity} from "react-icons/ca";
-// import {MdOutlineVideoLibrary} from "react-icons/md";
-// import {FcCollaboration} from "react-icons/fc";
-// import {BiGitPullRequest} from "react-icons/bi";
-// import {BiNews} from "react-icons/bi";
-import { BsCollectionPlayFill, BsFillPlayFill } from "react-icons/bs";
+import {BsFillPlayFill } from "react-icons/bs";
 
 const GSymbol = () => {
   return <Symbol>></Symbol>;
@@ -55,7 +47,6 @@ export const eventsData = {
   id: "events",
   idTo: "events",
   buttonType: null,
-  imgStart: true,
   img: blackBoxPng,
   lightBg: false,
   lightText: true,
