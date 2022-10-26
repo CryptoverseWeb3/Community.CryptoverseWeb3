@@ -10,13 +10,11 @@ import {
     NavMenu,
     NavItem,
     NavLinks,
-    ExternalNavLinks,
     NavBtn,
     NavBtnLink,
     NavLogoRouter,
 } from "./NavbarElements";
 import Dropdown from "../Dropdowns/Dropdown";
-import SideDropdown from "../Dropdowns/SideDropdown";
 import logo from "../../assets/Community Cryptoverseweb3 logo.png";
 
 const Navbar = ({toggle}) => {
@@ -59,6 +57,7 @@ const Navbar = ({toggle}) => {
                         <NavMenu>
                             {[
                                 {to: "about", title: "About"},
+                                {to: "events", title: "Events"},
                                 {to: "resources", title: "Learn"},
                                 {to: "community", title: "Community"},
                                 {to: "projects", title: "Projects"},
