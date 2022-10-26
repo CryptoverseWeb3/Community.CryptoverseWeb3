@@ -1,3 +1,12 @@
+## [0.2.2](https://github.com/CryptoverseWeb3/Community.CryptoverseWeb3/compare/v0.2.1...v0.2.2) (2022-10-26)
+
+
+### Bug Fixes
+
+* npm run dev issues blank screen ([#41](https://github.com/CryptoverseWeb3/Community.CryptoverseWeb3/issues/41)) ([ab344ea](https://github.com/CryptoverseWeb3/Community.CryptoverseWeb3/commit/ab344eadb1a908342710c1eef404d685d455f3fd))
+
+
+
 ## [0.2.1](https://github.com/CryptoverseWeb3/Community.CryptoverseWeb3/compare/v0.2.0...v0.2.1) (2022-10-14)
 
 
