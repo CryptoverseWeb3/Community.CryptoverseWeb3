@@ -100,13 +100,13 @@ export const NavLinks = styled(LinkScroll)`
 
   &.active {
     border-bottom: 3px solid #ff8100;
-  }
+    color: #FFA500;
+  
 `;
 
 export const NavBtn = styled.nav`
   display: flex;
   align-items: center;
-
   @media screen and (max-width: 930px) {
     display: none;
   }

@@ -10,7 +10,7 @@ import { Symbol } from "./InfoElements";
 import {BsFillPlayFill } from "react-icons/bs";
 
 const GSymbol = () => {
-  return <Symbol>></Symbol>;
+  return <Symbol></Symbol>;
 };
 
 export const aboutData = {
@@ -169,6 +169,24 @@ export const jobsAndInternship = {
   topLine: "Work with CryptoverseWeb3",
   headline: "Jobs and Internship offers",
   img: null,
+  buttonLabel: null,
+  imgStart: false,
+  dark: true,
+  darkText: false,
+};
+
+
+export const blogsData = {
+  id: "blogs",
+  idTo: "blogs",
+  buttonType: null,
+  img: blackBoxPng,
+  lightBg: false,
+  lightText: true,
+  lightTextDesc: true,
+  topLine: "blogs",
+  headline: "Trending Blogs",
+  description: null,
   buttonLabel: null,
   imgStart: false,
   dark: true,
